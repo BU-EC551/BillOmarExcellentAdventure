@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 79: Using initial value of <arg fmt="%s" index="1">enemyy</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 74: Assignment to <arg fmt="%s" index="1">q</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 131: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 146: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 148: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 164: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 175: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 180: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 193: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 201: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 210: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\debouncer.v" Line 19: Result of <arg fmt="%d" index="1">20</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">19</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 259: Assignment to <arg fmt="%s" index="1">forwardwire</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 260: Assignment to <arg fmt="%s" index="1">backwire</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 269: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 274: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\PCSprite.v" Line 39: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\PCSprite.v" Line 44: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\PCSprite.v" Line 48: Result of <arg fmt="%d" index="1">22</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 370: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">x0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">10</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 371: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">y0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">10</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 372: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">x1</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 373: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">y1</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\enemysprite.v" Line 39: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\enemysprite.v" Line 44: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\enemysprite.v" Line 48: Result of <arg fmt="%d" index="1">22</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 404: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">x0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">10</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 405: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">y0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">10</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 406: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">x1</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 407: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">y1</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\backsprite.v" Line 39: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\backsprite.v" Line 44: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\backsprite.v" Line 48: Result of <arg fmt="%d" index="1">22</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 420: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">x0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 421: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">y0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 422: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">x1</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 423: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">y1</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 427: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">rom_addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">15</arg>-bit while actual signal size is <arg fmt="%d" index="1">16</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 427: Assignment to <arg fmt="%s" index="1">addra3</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 432: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sprite_num</arg>&gt;. Formal port size is <arg fmt="%d" index="2">10</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\OmarPCnew_synth.v" Line 61: Empty module &lt;<arg fmt="%s" index="1">OmarPCnew</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 447: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">15</arg>-bit while actual signal size is <arg fmt="%d" index="1">16</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\redninjasmaller_synth.v" Line 61: Empty module &lt;<arg fmt="%s" index="1">redninjasmaller</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 460: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">15</arg>-bit while actual signal size is <arg fmt="%d" index="1">16</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 51: Net &lt;<arg fmt="%s" index="1">douta3[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v</arg>&quot; line <arg fmt="%d" index="2">259</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">fwddeb</arg>&gt; of block &lt;<arg fmt="%s" index="4">debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">vga_display</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v</arg>&quot; line <arg fmt="%d" index="2">260</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">backdeb</arg>&gt; of block &lt;<arg fmt="%s" index="4">debouncer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">vga_display</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v</arg>&quot; line <arg fmt="%s" index="2">259</arg>: Output port &lt;<arg fmt="%s" index="3">clean</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fwddeb</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v</arg>&quot; line <arg fmt="%s" index="2">260</arg>: Output port &lt;<arg fmt="%s" index="3">clean</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">backdeb</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v</arg>&quot; line <arg fmt="%s" index="2">419</arg>: Output port &lt;<arg fmt="%s" index="3">rom_addr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sprites_mem_background</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">douta3</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">blank</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">blank</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">blank</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">sprites_mem_background</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">vga_display</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">HITFLAG</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">vga_display</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">HITFLAG</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">vga_display</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">sprite_num_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">vga_display</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">enemy_num_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">vga_display</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">enemy_num_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">vga_display</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">vc/blank</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_display</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sprites_mem_background/Maddsub_GND_7_o_PWR_7_o_MuLt_8_OUT</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_display</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">jump_count_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">vga_display</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">vc/vcounter_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">vga_display</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">jump_count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga_display</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;starty_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

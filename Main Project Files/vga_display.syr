@@ -1,0 +1,973 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: vga_display.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vga_display.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vga_display"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : vga_display
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_controller_640_60.v" into library work
+Parsing module <vga_controller_640_60>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\PCSprite.v" into library work
+Parsing module <PCSprite>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\redninjasmaller_synth.v" into library work
+Parsing module <redninjasmaller>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\redninjasmaller.v" into library work
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\OmarPCnew_synth.v" into library work
+Parsing module <OmarPCnew>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\OmarPCnew.v" into library work
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\brickshort_synth.v" into library work
+Parsing module <brickshort>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\enemysprite.v" into library work
+Parsing module <enemysprite>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\debouncer.v" into library work
+Parsing module <debouncer>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\backsprite.v" into library work
+Parsing module <backsprite>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" into library work
+Parsing module <vga_display>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\RedNinja_synth.v" into library work
+Parsing module <RedNinja>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\BlueNinja_synth.v" into library work
+Parsing module <BlueNinja>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\bricks_synth.v" into library work
+Parsing module <bricks>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\brickthin_synth.v" into library work
+Parsing module <brickthin>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\BillPC_synth.v" into library work
+Parsing module <BillPC>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\RedNinjawithDeath_synth.v" into library work
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\BlueNinjawithDeath_synth.v" into library work
+Parsing module <BlueNinjawithDeath>.
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\OmarPC_synth.v" into library work
+Analyzing Verilog file "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\gameover_synth.v" into library work
+Parsing module <gameover>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <vga_display>.
+WARNING:HDLCompiler:872 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 79: Using initial value of enemyy since it is never assigned
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 74: Assignment to q ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 131: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 146: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 148: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 164: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 175: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 180: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 193: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 201: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 210: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <debouncer>.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\debouncer.v" Line 19: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 259: Assignment to forwardwire ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 260: Assignment to backwire ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 269: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 274: Result of 32-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <vga_controller_640_60>.
+
+Elaborating module <PCSprite>.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\PCSprite.v" Line 39: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\PCSprite.v" Line 44: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\PCSprite.v" Line 48: Result of 22-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 370: Size mismatch in connection of port <x0>. Formal port size is 11-bit while actual signal size is 10-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 371: Size mismatch in connection of port <y0>. Formal port size is 11-bit while actual signal size is 10-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 372: Size mismatch in connection of port <x1>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 373: Size mismatch in connection of port <y1>. Formal port size is 11-bit while actual signal size is 32-bit.
+
+Elaborating module <enemysprite>.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\enemysprite.v" Line 39: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\enemysprite.v" Line 44: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\enemysprite.v" Line 48: Result of 22-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 404: Size mismatch in connection of port <x0>. Formal port size is 11-bit while actual signal size is 10-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 405: Size mismatch in connection of port <y0>. Formal port size is 11-bit while actual signal size is 10-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 406: Size mismatch in connection of port <x1>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 407: Size mismatch in connection of port <y1>. Formal port size is 11-bit while actual signal size is 32-bit.
+
+Elaborating module <backsprite>.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\backsprite.v" Line 39: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\backsprite.v" Line 44: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\backsprite.v" Line 48: Result of 22-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 420: Size mismatch in connection of port <x0>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 421: Size mismatch in connection of port <y0>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 422: Size mismatch in connection of port <x1>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 423: Size mismatch in connection of port <y1>. Formal port size is 11-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 427: Size mismatch in connection of port <rom_addr>. Formal port size is 15-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 427: Assignment to addra3 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 432: Size mismatch in connection of port <sprite_num>. Formal port size is 10-bit while actual signal size is 32-bit.
+
+Elaborating module <OmarPCnew>.
+WARNING:HDLCompiler:1499 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\OmarPCnew_synth.v" Line 61: Empty module <OmarPCnew> remains a black box.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 447: Size mismatch in connection of port <addra>. Formal port size is 15-bit while actual signal size is 16-bit.
+
+Elaborating module <redninjasmaller>.
+WARNING:HDLCompiler:1499 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\ipcore_dir\redninjasmaller_synth.v" Line 61: Empty module <redninjasmaller> remains a black box.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 460: Size mismatch in connection of port <addra>. Formal port size is 15-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:634 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" Line 51: Net <douta3[7]> does not have a driver.
+WARNING:Xst:2972 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" line 259. All outputs of instance <fwddeb> of block <debouncer> are unconnected in block <vga_display>. Underlying logic will be removed.
+WARNING:Xst:2972 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" line 260. All outputs of instance <backdeb> of block <debouncer> are unconnected in block <vga_display>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <vga_display>.
+    Related source file is "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v".
+        N = 2
+INFO:Xst:3210 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" line 259: Output port <clean> of the instance <fwddeb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" line 260: Output port <clean> of the instance <backdeb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_display.v" line 419: Output port <rom_addr> of the instance <sprites_mem_background> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <douta3> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <ball_clk>.
+    Found 5-bit register for signal <sprite_count>.
+    Found 1-bit register for signal <sprite_clk>.
+    Found 1-bit register for signal <jump_start>.
+    Found 9-bit register for signal <jump_count>.
+    Found 10-bit register for signal <starty>.
+    Found 10-bit register for signal <enemyx>.
+    Found 10-bit register for signal <enemy_num>.
+    Found 1-bit register for signal <HITFLAG>.
+    Found 1-bit register for signal <enemydirection>.
+    Found 10-bit register for signal <sprite_num>.
+    Found 1-bit register for signal <direction>.
+    Found 1-bit register for signal <enemy1dead>.
+    Found 10-bit register for signal <startx>.
+    Found 2-bit register for signal <count>.
+    Found 1-bit register for signal <clk_25Mhz>.
+    Found 18-bit register for signal <ball_count>.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_36_OUT> created at line 167.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_84_OUT> created at line 242.
+    Found 18-bit adder for signal <ball_count[17]_GND_1_o_add_7_OUT> created at line 106.
+    Found 5-bit adder for signal <sprite_count[4]_GND_1_o_add_11_OUT> created at line 114.
+    Found 9-bit adder for signal <jump_count[8]_GND_1_o_add_15_OUT> created at line 131.
+    Found 10-bit adder for signal <starty[9]_GND_1_o_add_19_OUT> created at line 148.
+    Found 10-bit adder for signal <enemyx[9]_GND_1_o_add_46_OUT> created at line 180.
+    Found 11-bit adder for signal <n0231> created at line 185.
+    Found 11-bit adder for signal <n0232> created at line 185.
+    Found 10-bit adder for signal <enemy_num[9]_GND_1_o_add_55_OUT> created at line 193.
+    Found 10-bit adder for signal <sprite_num[9]_GND_1_o_add_69_OUT> created at line 210.
+    Found 11-bit adder for signal <n0237> created at line 233.
+    Found 11-bit adder for signal <n0239> created at line 242.
+    Found 10-bit adder for signal <startx[9]_GND_1_o_add_97_OUT> created at line 269.
+    Found 2-bit adder for signal <count[1]_GND_1_o_add_103_OUT> created at line 335.
+    Found 11-bit adder for signal <n0249> created at line 373.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_18_OUT<9:0>> created at line 146.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_33_OUT<9:0>> created at line 164.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_99_OUT<9:0>> created at line 274.
+    Found 18-bit comparator greater for signal <PWR_1_o_ball_count[17]_LessThan_9_o> created at line 107
+    Found 5-bit comparator greater for signal <PWR_1_o_sprite_count[4]_LessThan_13_o> created at line 115
+    Found 9-bit comparator greater for signal <jump_count[8]_GND_1_o_LessThan_17_o> created at line 145
+    Found 9-bit comparator lessequal for signal <jump_count[8]_GND_1_o_LessThan_19_o> created at line 147
+    Found 10-bit comparator lessequal for signal <n0035> created at line 162
+    Found 10-bit comparator lessequal for signal <n0040> created at line 165
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_38_o> created at line 167
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_40_o> created at line 167
+    Found 10-bit comparator lessequal for signal <n0052> created at line 177
+    Found 10-bit comparator greater for signal <PWR_1_o_INV_18_o> created at line 181
+    Found 10-bit comparator greater for signal <n0059> created at line 183
+    Found 11-bit comparator greater for signal <BUS_0008_BUS_0009_LessThan_52_o> created at line 185
+    Found 11-bit comparator greater for signal <GND_1_o_BUS_0010_LessThan_54_o> created at line 185
+    Found 10-bit comparator lessequal for signal <n0088> created at line 198
+    Found 10-bit comparator lessequal for signal <n0093> created at line 207
+    Found 11-bit comparator greater for signal <GND_1_o_BUS_0014_LessThan_79_o> created at line 233
+    Found 11-bit comparator greater for signal <BUS_0015_BUS_0016_LessThan_82_o> created at line 233
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_86_o> created at line 242
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_88_o> created at line 242
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred  92 D-type flip-flop(s).
+	inferred  19 Comparator(s).
+	inferred  15 Multiplexer(s).
+Unit <vga_display> synthesized.
+
+Synthesizing Unit <vga_controller_640_60>.
+    Related source file is "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\vga_controller_640_60.v".
+        HMAX = 800
+        VMAX = 525
+        HLINES = 640
+        HFP = 648
+        HSP = 744
+        VLINES = 480
+        VFP = 482
+        VSP = 484
+        SPP = 0
+    Found 11-bit register for signal <hcounter>.
+    Found 11-bit register for signal <vcounter>.
+    Found 1-bit register for signal <HS>.
+    Found 1-bit register for signal <VS>.
+    Found 1-bit register for signal <blank>.
+    Found 11-bit adder for signal <hcounter[10]_GND_3_o_add_3_OUT> created at line 53.
+    Found 11-bit adder for signal <vcounter[10]_GND_3_o_add_9_OUT> created at line 61.
+    Found 11-bit comparator lessequal for signal <n0012> created at line 68
+    Found 11-bit comparator greater for signal <hcounter[10]_GND_3_o_LessThan_16_o> created at line 68
+    Found 11-bit comparator lessequal for signal <n0018> created at line 75
+    Found 11-bit comparator greater for signal <vcounter[10]_GND_3_o_LessThan_19_o> created at line 75
+    Found 11-bit comparator greater for signal <hcounter[10]_GND_3_o_LessThan_20_o> created at line 80
+    Found 11-bit comparator greater for signal <vcounter[10]_GND_3_o_LessThan_21_o> created at line 80
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <vga_controller_640_60> synthesized.
+
+Synthesizing Unit <PCSprite>.
+    Related source file is "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\PCSprite.v".
+WARNING:Xst:647 - Input <blank> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 10-bit subtractor for signal <hc[10]_x0[10]_sub_3_OUT<9:0>> created at line 39.
+    Found 10-bit subtractor for signal <vc[10]_y0[10]_sub_7_OUT<9:0>> created at line 44.
+    Found 21-bit adder for signal <_n0058> created at line 48.
+    Found 21-bit adder for signal <n0029> created at line 48.
+    Found 10x10-bit multiplier for signal <GND_4_o_PWR_5_o_MuLt_8_OUT> created at line 48.
+    Found 11-bit comparator lessequal for signal <n0000> created at line 38
+    Found 11-bit comparator greater for signal <hc[10]_x1[10]_LessThan_2_o> created at line 38
+    Found 11-bit comparator lessequal for signal <n0006> created at line 43
+    Found 11-bit comparator greater for signal <vc[10]_y1[10]_LessThan_6_o> created at line 43
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <PCSprite> synthesized.
+
+Synthesizing Unit <enemysprite>.
+    Related source file is "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\enemysprite.v".
+WARNING:Xst:647 - Input <blank> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 10-bit subtractor for signal <hc[10]_x0[10]_sub_3_OUT<9:0>> created at line 39.
+    Found 10-bit subtractor for signal <vc[10]_y0[10]_sub_7_OUT<9:0>> created at line 44.
+    Found 21-bit adder for signal <_n0058> created at line 48.
+    Found 21-bit adder for signal <n0029> created at line 48.
+    Found 10x10-bit multiplier for signal <GND_6_o_PWR_6_o_MuLt_8_OUT> created at line 48.
+    Found 11-bit comparator lessequal for signal <n0000> created at line 38
+    Found 11-bit comparator greater for signal <hc[10]_x1[10]_LessThan_2_o> created at line 38
+    Found 11-bit comparator lessequal for signal <n0006> created at line 43
+    Found 11-bit comparator greater for signal <vc[10]_y1[10]_LessThan_6_o> created at line 43
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <enemysprite> synthesized.
+
+Synthesizing Unit <backsprite>.
+    Related source file is "\\ad\eng\users\o\r\orana5\Desktop\551\SpriteAttempt\Sprites\backsprite.v".
+WARNING:Xst:647 - Input <blank> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 10-bit subtractor for signal <vc[10]_y0[10]_sub_7_OUT<9:0>> created at line 44.
+    Found 21-bit adder for signal <n0029> created at line 48.
+    Found 10x10-bit multiplier for signal <GND_7_o_PWR_7_o_MuLt_8_OUT> created at line 48.
+    Found 11-bit comparator lessequal for signal <n0000> created at line 38
+    Found 11-bit comparator greater for signal <hc[10]_x1[10]_LessThan_2_o> created at line 38
+    Found 11-bit comparator lessequal for signal <n0006> created at line 43
+    Found 11-bit comparator greater for signal <vc[10]_y1[10]_LessThan_6_o> created at line 43
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <backsprite> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 10x10-bit multiplier                                  : 3
+# Adders/Subtractors                                   : 28
+ 10-bit adder                                          : 2
+ 10-bit addsub                                         : 3
+ 10-bit subtractor                                     : 5
+ 11-bit adder                                          : 7
+ 11-bit subtractor                                     : 2
+ 18-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 21-bit adder                                          : 5
+ 5-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 22
+ 1-bit register                                        : 11
+ 10-bit register                                       : 5
+ 11-bit register                                       : 2
+ 18-bit register                                       : 1
+ 2-bit register                                        : 1
+ 5-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 37
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 5
+ 11-bit comparator greater                             : 14
+ 11-bit comparator lessequal                           : 8
+ 18-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 4
+ 5-bit comparator greater                              : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 29
+ 10-bit 2-to-1 multiplexer                             : 21
+ 11-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/OmarPCnew.ngc>.
+Reading core <ipcore_dir/redninjasmaller.ngc>.
+Loading core <OmarPCnew> for timing and area information for instance <memory_6>.
+Loading core <redninjasmaller> for timing and area information for instance <memory_7>.
+WARNING:Xst:1290 - Hierarchical block <sprites_mem_background> is unconnected in block <vga_display>.
+   It will be removed from the design.
+WARNING:Xst:1426 - The value init of the FF/Latch HITFLAG hinder the constant cleaning in the block vga_display.
+   You should achieve better results by setting this init to 1.
+
+Synthesizing (advanced) Unit <PCSprite>.
+	Multiplier <Mmult_GND_4_o_PWR_5_o_MuLt_8_OUT> in block <PCSprite> and adder/subtractor <Madd_n0029_Madd> in block <PCSprite> are combined into a MAC<Maddsub_GND_4_o_PWR_5_o_MuLt_8_OUT>.
+Unit <PCSprite> synthesized (advanced).
+
+Synthesizing (advanced) Unit <backsprite>.
+	Multiplier <Mmult_GND_7_o_PWR_7_o_MuLt_8_OUT> in block <backsprite> and adder/subtractor <Madd_n0029_Madd> in block <backsprite> are combined into a MAC<Maddsub_GND_7_o_PWR_7_o_MuLt_8_OUT>.
+Unit <backsprite> synthesized (advanced).
+
+Synthesizing (advanced) Unit <enemysprite>.
+	Multiplier <Mmult_GND_6_o_PWR_6_o_MuLt_8_OUT> in block <enemysprite> and adder/subtractor <Madd_n0029_Madd> in block <enemysprite> are combined into a MAC<Maddsub_GND_6_o_PWR_6_o_MuLt_8_OUT>.
+Unit <enemysprite> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_controller_640_60>.
+The following registers are absorbed into counter <hcounter>: 1 register on signal <hcounter>.
+The following registers are absorbed into counter <vcounter>: 1 register on signal <vcounter>.
+Unit <vga_controller_640_60> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_display>.
+The following registers are absorbed into counter <starty>: 1 register on signal <starty>.
+The following registers are absorbed into counter <startx>: 1 register on signal <startx>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <ball_count>: 1 register on signal <ball_count>.
+The following registers are absorbed into counter <sprite_count>: 1 register on signal <sprite_count>.
+The following registers are absorbed into counter <jump_count>: 1 register on signal <jump_count>.
+The following registers are absorbed into accumulator <enemyx>: 1 register on signal <enemyx>.
+Unit <vga_display> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 3
+ 10x10-to-15-bit MAC                                   : 1
+ 10x10-to-16-bit MAC                                   : 2
+# Adders/Subtractors                                   : 16
+ 10-bit adder                                          : 2
+ 10-bit subtractor                                     : 5
+ 11-bit adder                                          : 5
+ 11-bit subtractor                                     : 2
+ 16-bit adder                                          : 2
+# Counters                                             : 8
+ 10-bit updown counter                                 : 2
+ 11-bit up counter                                     : 2
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 10-bit updown accumulator                             : 1
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+# Comparators                                          : 37
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 5
+ 11-bit comparator greater                             : 14
+ 11-bit comparator lessequal                           : 8
+ 18-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 4
+ 5-bit comparator greater                              : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 27
+ 10-bit 2-to-1 multiplexer                             : 21
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch HITFLAG hinder the constant cleaning in the block vga_display.
+   You should achieve better results by setting this init to 1.
+
+Optimizing unit <vga_display> ...
+WARNING:Xst:1293 - FF/Latch <sprite_num_0> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <enemy_num_0> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <enemy_num_0> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <vga_controller_640_60> ...
+
+Optimizing unit <PCSprite> ...
+
+Optimizing unit <enemysprite> ...
+
+Optimizing unit <backsprite> ...
+WARNING:Xst:2677 - Node <vc/blank> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <sprites_mem_background/Maddsub_GND_7_o_PWR_7_o_MuLt_8_OUT> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:1293 - FF/Latch <jump_count_8> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <vc/vcounter_10> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <jump_count_0> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <starty_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vga_display, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 111
+ Flip-Flops                                            : 111
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : vga_display.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 788
+#      GND                         : 3
+#      INV                         : 12
+#      LUT1                        : 24
+#      LUT2                        : 83
+#      LUT3                        : 77
+#      LUT4                        : 175
+#      LUT5                        : 54
+#      LUT6                        : 107
+#      MUXCY                       : 154
+#      VCC                         : 3
+#      XORCY                       : 96
+# FlipFlops/Latches                : 119
+#      FD                          : 32
+#      FDC                         : 11
+#      FDCE                        : 10
+#      FDE                         : 40
+#      FDR                         : 13
+#      FDRE                        : 9
+#      FDSE                        : 4
+# RAMS                             : 30
+#      RAMB16BWER                  : 30
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 5
+#      OBUF                        : 10
+# DSPs                             : 4
+#      DSP48A1                     : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             119  out of  18224     0%  
+ Number of Slice LUTs:                  532  out of   9112     5%  
+    Number used as Logic:               532  out of   9112     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    569
+   Number with an unused Flip Flop:     450  out of    569    79%  
+   Number with an unused LUT:            37  out of    569     6%  
+   Number of fully used LUT-FF pairs:    82  out of    569    14%  
+   Number of unique control sets:        21
+
+IO Utilization: 
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    232     6%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               30  out of     32    93%  
+    Number using Block RAM only:         30
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of DSP48A1s:                      4  out of     32    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | BUFGP                                                                                                                             | 22    |
+ball_clk                           | BUFG                                                                                                                              | 34    |
+sprite_clk                         | BUFG                                                                                                                              | 32    |
+clk_25Mhz                          | BUFG                                                                                                                              | 61    |
+enemy_num<0>                       | NONE(sprites_mem_Omar/Madd__n0058_Madd1)                                                                                          | 2     |
+memory_6/N1                        | NONE(memory_6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 15    |
+memory_7/N1                        | NONE(memory_7/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 15    |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 14.082ns (Maximum Frequency: 71.012MHz)
+   Minimum input arrival time before clock: 6.370ns
+   Maximum output required time after clock: 11.554ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.726ns (frequency: 366.824MHz)
+  Total number of paths / destination ports: 193 / 22
+-------------------------------------------------------------------------
+Delay:               2.726ns (Levels of Logic = 2)
+  Source:            ball_count_12 (FF)
+  Destination:       ball_clk (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: ball_count_12 to ball_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.961  ball_count_12 (ball_count_12)
+     LUT5:I0->O            1   0.203   0.808  PWR_1_o_ball_count[17]_LessThan_9_o21 (PWR_1_o_ball_count[17]_LessThan_9_o2)
+     LUT6:I3->O            1   0.205   0.000  PWR_1_o_ball_count[17]_LessThan_9_o24 (PWR_1_o_ball_count[17]_LessThan_9_o)
+     FD:D                      0.102          ball_clk
+    ----------------------------------------
+    Total                      2.726ns (0.957ns logic, 1.769ns route)
+                                       (35.1% logic, 64.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ball_clk'
+  Clock period: 4.895ns (frequency: 204.296MHz)
+  Total number of paths / destination ports: 840 / 60
+-------------------------------------------------------------------------
+Delay:               4.895ns (Levels of Logic = 3)
+  Source:            jump_start (FF)
+  Destination:       starty_1 (FF)
+  Source Clock:      ball_clk rising
+  Destination Clock: ball_clk rising
+
+  Data Path: jump_start to starty_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.447   0.883  jump_start (jump_start)
+     LUT2:I1->O            1   0.205   0.944  _n0296_SW0 (N26)
+     LUT6:I0->O           10   0.203   0.857  _n0296 (_n0296)
+     LUT2:I1->O            9   0.205   0.829  _n0341_inv1 (_n0341_inv)
+     FDE:CE                    0.322          starty_1
+    ----------------------------------------
+    Total                      4.895ns (1.382ns logic, 3.513ns route)
+                                       (28.2% logic, 71.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sprite_clk'
+  Clock period: 10.187ns (frequency: 98.162MHz)
+  Total number of paths / destination ports: 9497 / 62
+-------------------------------------------------------------------------
+Delay:               10.187ns (Levels of Logic = 9)
+  Source:            enemyx_1 (FF)
+  Destination:       enemy_num_3 (FF)
+  Source Clock:      sprite_clk rising
+  Destination Clock: sprite_clk rising
+
+  Data Path: enemyx_1 to enemy_num_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             31   0.447   1.382  enemyx_1 (enemyx_1)
+     LUT2:I0->O            4   0.203   0.931  Madd_n0231_cy<1>1 (Madd_n0231_cy<1>)
+     LUT6:I2->O            5   0.203   0.943  Madd_n0231_cy<6>11 (Madd_n0231_cy<6>)
+     LUT4:I1->O            3   0.205   0.898  Madd_n0231_xor<9>11 (n0231<9>)
+     LUT4:I0->O            0   0.203   0.000  Mcompar_BUS_0008_BUS_0009_LessThan_52_o_lutdi4 (Mcompar_BUS_0008_BUS_0009_LessThan_52_o_lutdi4)
+     MUXCY:DI->O           2   0.339   0.981  Mcompar_BUS_0008_BUS_0009_LessThan_52_o_cy<4> (Mcompar_BUS_0008_BUS_0009_LessThan_52_o_cy<4>)
+     LUT6:I0->O            1   0.203   0.924  Mcompar_BUS_0008_BUS_0009_LessThan_52_o_cy<5> (Mcompar_BUS_0008_BUS_0009_LessThan_52_o_cy<5>)
+     LUT5:I0->O            4   0.203   0.931  GND_1_o_enemydirection_AND_1_o311 (GND_1_o_enemydirection_AND_1_o31)
+     LUT5:I1->O            1   0.203   0.684  Mmux_enemy_num[9]_enemy_num[9]_mux_92_OUT43 (enemy_num[9]_enemy_num[9]_mux_92_OUT<3>)
+     LUT4:I2->O            1   0.203   0.000  enemy_num_3_glue_rst (enemy_num_3_glue_rst)
+     FD:D                      0.102          enemy_num_3
+    ----------------------------------------
+    Total                     10.187ns (2.514ns logic, 7.673ns route)
+                                       (24.7% logic, 75.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_25Mhz'
+  Clock period: 14.082ns (frequency: 71.012MHz)
+  Total number of paths / destination ports: 11115573 / 469
+-------------------------------------------------------------------------
+Delay:               14.082ns (Levels of Logic = 11)
+  Source:            vc/hcounter_0 (FF)
+  Destination:       memory_6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
+  Source Clock:      clk_25Mhz rising
+  Destination Clock: clk_25Mhz rising
+
+  Data Path: vc/hcounter_0 to memory_6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.447   1.161  vc/hcounter_0 (vc/hcounter_0)
+     LUT4:I1->O            1   0.205   0.000  sprites_mem_Omar/Mcompar_x0[10]_hc[10]_LessThan_1_o_lut<0> (sprites_mem_Omar/Mcompar_x0[10]_hc[10]_LessThan_1_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  sprites_mem_Omar/Mcompar_x0[10]_hc[10]_LessThan_1_o_cy<0> (sprites_mem_Omar/Mcompar_x0[10]_hc[10]_LessThan_1_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  sprites_mem_Omar/Mcompar_x0[10]_hc[10]_LessThan_1_o_cy<1> (sprites_mem_Omar/Mcompar_x0[10]_hc[10]_LessThan_1_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  sprites_mem_Omar/Mcompar_x0[10]_hc[10]_LessThan_1_o_cy<2> (sprites_mem_Omar/Mcompar_x0[10]_hc[10]_LessThan_1_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  sprites_mem_Omar/Mcompar_x0[10]_hc[10]_LessThan_1_o_cy<3> (sprites_mem_Omar/Mcompar_x0[10]_hc[10]_LessThan_1_o_cy<3>)
+     LUT6:I5->O           11   0.205   0.883  sprites_mem_Omar/Mcompar_x0[10]_hc[10]_LessThan_1_o_cy<4> (sprites_mem_Omar/x0[10]_hc[10]_LessThan_1_o)
+     LUT5:I4->O            1   0.205   0.579  sprites_mem_Omar/Mmux_x11 (sprites_mem_Omar/x<0>)
+     DSP48A1:C0->PCOUT47    1   2.689   0.000  sprites_mem_Omar/Madd__n0058_Madd1 (sprites_mem_Omar/Madd__n0058_Madd1_PCOUT_to_Maddsub_GND_4_o_PWR_5_o_MuLt_8_OUT_PCIN_47)
+     DSP48A1:PCIN47->P13   12   2.264   1.137  sprites_mem_Omar/Maddsub_GND_4_o_PWR_5_o_MuLt_8_OUT (addra<13>)
+     begin scope: 'memory_6:addra<13>'
+     LUT4:I1->O            1   0.205   0.579  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[3]_PWR_16_o_equal_15_o<3>1 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<14>)
+     RAMB16BWER:ENA            0.220          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
+    ----------------------------------------
+    Total                     14.082ns (9.163ns logic, 4.919ns route)
+                                       (65.1% logic, 34.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sprite_clk'
+  Total number of paths / destination ports: 93 / 40
+-------------------------------------------------------------------------
+Offset:              6.370ns (Levels of Logic = 5)
+  Source:            attack (PAD)
+  Destination:       enemy_num_1 (FF)
+  Destination Clock: sprite_clk rising
+
+  Data Path: attack to enemy_num_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.222   1.256  attack_IBUF (attack_IBUF)
+     LUT6:I3->O           10   0.205   0.857  Mmux_enemy_num[9]_enemy_num[9]_mux_92_OUT111 (Mmux_enemy_num[9]_enemy_num[9]_mux_92_OUT11)
+     LUT4:I3->O            9   0.205   1.194  _n0412_inv1 (_n0412_inv)
+     LUT6:I0->O            1   0.203   0.924  enemy_num_1_glue_ce (enemy_num_1_glue_ce)
+     LUT5:I0->O            1   0.203   0.000  enemy_num_1_glue_rst (enemy_num_1_glue_rst)
+     FD:D                      0.102          enemy_num_1
+    ----------------------------------------
+    Total                      6.370ns (2.140ns logic, 4.230ns route)
+                                       (33.6% logic, 66.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ball_clk'
+  Total number of paths / destination ports: 86 / 21
+-------------------------------------------------------------------------
+Offset:              3.914ns (Levels of Logic = 2)
+  Source:            forward (PAD)
+  Destination:       startx_0 (FF)
+  Destination Clock: ball_clk rising
+
+  Data Path: forward to startx_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.222   1.311  forward_IBUF (forward_IBUF)
+     LUT2:I0->O           10   0.203   0.856  _n0330_inv1 (_n0330_inv)
+     FDE:CE                    0.322          startx_0
+    ----------------------------------------
+    Total                      3.914ns (1.747ns logic, 2.167ns route)
+                                       (44.6% logic, 55.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_25Mhz'
+  Total number of paths / destination ports: 21 / 21
+-------------------------------------------------------------------------
+Offset:              2.765ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       vc/vcounter_9 (FF)
+  Destination Clock: clk_25Mhz rising
+
+  Data Path: rst to vc/vcounter_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   1.222   1.113  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.430          vc/hcounter_0
+    ----------------------------------------
+    Total                      2.765ns (1.652ns logic, 1.113ns route)
+                                       (59.8% logic, 40.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_25Mhz'
+  Total number of paths / destination ports: 3890 / 10
+-------------------------------------------------------------------------
+Offset:              9.715ns (Levels of Logic = 6)
+  Source:            vc/vcounter_8 (FF)
+  Destination:       R<2> (PAD)
+  Source Clock:      clk_25Mhz rising
+
+  Data Path: vc/vcounter_8 to R<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.447   1.058  vc/vcounter_8 (vc/vcounter_8)
+     LUT3:I0->O            6   0.205   1.109  sprites_mem_red/Mmux_y521 (sprites_mem_red/Mmux_y52)
+     LUT6:I0->O            2   0.203   0.961  sprites_mem_red/Mmux_y31 (sprites_mem_red/y<2>)
+     LUT6:I1->O            1   0.203   0.924  sprites_mem_red/GND_6_o_GND_6_o_AND_114_o3 (sprites_mem_red/GND_6_o_GND_6_o_AND_114_o3)
+     LUT5:I0->O            8   0.203   1.050  sprites_mem_red/GND_6_o_GND_6_o_AND_114_o6 (sprites_mem_red/GND_6_o_GND_6_o_AND_114_o)
+     LUT4:I0->O            1   0.203   0.579  R<2>1 (R_2_OBUF)
+     OBUF:I->O                 2.571          R_2_OBUF (R<2>)
+    ----------------------------------------
+    Total                      9.715ns (4.035ns logic, 5.680ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sprite_clk'
+  Total number of paths / destination ports: 1392 / 8
+-------------------------------------------------------------------------
+Offset:              11.554ns (Levels of Logic = 8)
+  Source:            enemyx_3 (FF)
+  Destination:       R<2> (PAD)
+  Source Clock:      sprite_clk rising
+
+  Data Path: enemyx_3 to R<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             30   0.447   1.511  enemyx_3 (enemyx_3)
+     LUT6:I2->O            6   0.203   0.745  Madd_n0239_cy<6>11 (Madd_n0239_cy<6>)
+     LUT3:I2->O            6   0.205   0.992  Madd_n0239_xor<8>11 (n0239<8>)
+     LUT4:I0->O            1   0.203   0.000  sprites_mem_red/Mcompar_hc[10]_x1[10]_LessThan_2_o_lut<4> (sprites_mem_red/Mcompar_hc[10]_x1[10]_LessThan_2_o_lut<4>)
+     MUXCY:S->O           11   0.366   1.247  sprites_mem_red/Mcompar_hc[10]_x1[10]_LessThan_2_o_cy<4> (sprites_mem_red/Mcompar_hc[10]_x1[10]_LessThan_2_o_cy<4>)
+     LUT6:I0->O            1   0.203   0.827  sprites_mem_red/Mcompar_hc[10]_x1[10]_LessThan_2_o_cy<5> (sprites_mem_red/Mcompar_hc[10]_x1[10]_LessThan_2_o_cy<5>)
+     LUT5:I1->O            8   0.203   1.050  sprites_mem_red/GND_6_o_GND_6_o_AND_114_o6 (sprites_mem_red/GND_6_o_GND_6_o_AND_114_o)
+     LUT4:I0->O            1   0.203   0.579  R<2>1 (R_2_OBUF)
+     OBUF:I->O                 2.571          R_2_OBUF (R<2>)
+    ----------------------------------------
+    Total                     11.554ns (4.604ns logic, 6.950ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ball_clk'
+  Total number of paths / destination ports: 2784 / 8
+-------------------------------------------------------------------------
+Offset:              11.395ns (Levels of Logic = 8)
+  Source:            startx_1 (FF)
+  Destination:       R<2> (PAD)
+  Source Clock:      ball_clk rising
+
+  Data Path: startx_1 to R<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             25   0.447   1.440  startx_1 (startx_1)
+     LUT6:I2->O            5   0.203   0.819  Madd_n0232_cy<6>11 (Madd_n0232_cy<6>)
+     LUT3:I1->O            6   0.203   0.992  Madd_n0232_xor<8>11 (n0232<8>)
+     LUT4:I0->O            1   0.203   0.000  sprites_mem_Omar/Mcompar_hc[10]_x1[10]_LessThan_2_o_lut<4> (sprites_mem_Omar/Mcompar_hc[10]_x1[10]_LessThan_2_o_lut<4>)
+     MUXCY:S->O           11   0.366   1.247  sprites_mem_Omar/Mcompar_hc[10]_x1[10]_LessThan_2_o_cy<4> (sprites_mem_Omar/Mcompar_hc[10]_x1[10]_LessThan_2_o_cy<4>)
+     LUT6:I0->O            1   0.203   0.808  sprites_mem_Omar/Mcompar_hc[10]_x1[10]_LessThan_2_o_cy<5> (sprites_mem_Omar/Mcompar_hc[10]_x1[10]_LessThan_2_o_cy<5>)
+     LUT6:I3->O            8   0.205   0.907  sprites_mem_Omar/GND_4_o_GND_4_o_AND_111_o5 (sprites_mem_Omar/GND_4_o_GND_4_o_AND_111_o)
+     LUT4:I2->O            1   0.203   0.579  R<2>1 (R_2_OBUF)
+     OBUF:I->O                 2.571          R_2_OBUF (R<2>)
+    ----------------------------------------
+    Total                     11.395ns (4.604ns logic, 6.791ns route)
+                                       (40.4% logic, 59.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ball_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ball_clk       |    4.895|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.726|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_25Mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ball_clk       |   15.835|         |         |         |
+clk_25Mhz      |   14.082|         |         |         |
+sprite_clk     |   15.834|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock enemy_num<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ball_clk       |    8.742|         |         |         |
+clk_25Mhz      |    6.988|         |         |         |
+sprite_clk     |    8.740|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sprite_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ball_clk       |   10.736|         |         |         |
+sprite_clk     |   10.187|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.25 secs
+ 
+--> 
+
+Total memory usage is 262124 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   61 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+
