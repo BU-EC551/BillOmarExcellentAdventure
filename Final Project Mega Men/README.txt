@@ -2,7 +2,7 @@ B&O's Excellent Adventure:
 
 Add all .v and .ucf files to the project. 
 
-Synthesize the project and create the .bit file. 
+Synthesize the project and create the .bit file. Don't program the FPGA yet. 
 
 Go to the Adept program and load the .bin files in the following load order: 
 
@@ -27,3 +27,4 @@ Start these at the following decimal locations:
 8. 2215401
 9. 2260401
 
+Now load the .bit file onto the FPGA using the Adept tool. 
